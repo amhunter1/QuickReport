@@ -1,0 +1,109 @@
+# AdvancedReport Messages File
+# Primary language is English (en), secondary is Turkish (tr).
+
+messages:
+  # General Messages
+  no-permission:
+    en: "&cYou do not have permission to use this command."
+    tr: "&cBu komutu kullanmaya yetkiniz yok."
+  player-only:
+    en: "&cThis command can only be run by a player."
+    tr: "&cBu komut sadece bir oyuncu tarafından çalıştırılabilir."
+  player-not-found:
+    en: "&cPlayer &e%player% &cnot found or is offline."
+    tr: "&cOyuncu &e%player% &cbulunamadı veya çevrimdışı."
+  report-id-not-found:
+    en: "&cReport with ID &e%id% &cnot found."
+    tr: "&c&e%id% &cID'li rapor bulunamadı."
+
+  # /report Command Messages
+  report-success:
+    en: "&aYour report (ID: &e%id%&a) against &e%reported% &ahas been submitted. Status: &6Pending."
+    tr: "&a&e%reported% &aoyuncusuna karşı gönderdiğiniz rapor (ID: &e%id%&a) başarıyla iletildi. Durum: &6İnceleniyor."
+  report-cooldown:
+    en: "&cYou must wait &e%time% seconds &cbefore submitting another report."
+    tr: "&cYeni bir rapor göndermeden önce &e%time% saniye &cbeklemelisiniz."
+  report-db-error:
+    en: "&cAn internal error occurred while saving your report. Please contact an administrator."
+    tr: "&cRaporunuz kaydedilirken dahili bir hata oluştu. Lütfen bir yöneticiyle iletişime geçin."
+  report-self:
+    en: "&cYou cannot report yourself."
+    tr: "&cKendinizi rapor edemezsiniz."
+  invalid-page-number:
+    en: "&cInvalid page number. Please enter a valid number."
+    tr: "&cHatalı sayfa numarası. Lütfen geçerli bir numara girin."
+  invalid-page-range:
+    en: "&cPage %page% is out of range. Total pages: %total_pages%."
+    tr: "&c%page%. sayfa aralık dışında. Toplam sayfa: %total_pages%."
+  report-reason-invalid:
+    en: "&cInvalid report reason. Available reasons: &e%reasons%"
+    tr: "&cHatalı rapor sebebi. Geçerli sebepler: &e%reasons%"
+
+  # Admin Notification
+  admin-new-report-notification:
+    en: "&6[QuickReport] &aNew report (ID: &e%id%&a) against &e%reported%&a. &7[Click to view details]"
+    tr: "&6[QuickReport] &a&e%reported% &aoyuncusuna karşı yeni rapor (ID: &e%id%&a). &7[Detaylar için tıkla]"
+
+  # Report Action Messages
+  report-accepted-reporter:
+    en: "&aYour report (ID: &e%id%&a) against &e%reported% &ahas been &2ACCEPTED &aby &e%admin%&a. You have been rewarded!"
+    tr: "&a&e%reported% &aoyuncusuna karşı gönderdiğiniz rapor (ID: &e%id%&a), &e%admin% &atarafından &2KABUL EDİLDİ&a. Ödüllendirildiniz!"
+  report-accepted-reported:
+    en: "&cYour report status has been updated: Report ID &e%id% &cwas &2ACCEPTED&c."
+    tr: "&cRapor durumunuz güncellendi: &e%id% &cID'li rapor &2KABUL EDİLDİ&c."
+  report-rejected-reporter:
+    en: "&cYour report (ID: &e%id%&c) against &e%reported% &chas been &4REJECTED &cby &e%admin%&c. Reason: &7%reason%"
+    tr: "&c&e%reported% &aoyuncusuna karşı gönderdiğiniz rapor (ID: &e%id%&c), &e%admin% &ctarafından &4REDDEDİLDİ&c. Sebep: &7%reason%"
+  report-rejected-reported:
+    en: "&cYour report status has been updated: Report ID &e%id% &cwas &4REJECTED&c."
+    tr: "&cRapor durumunuz güncellendi: &e%id% &cID'li rapor &4REDDEDİLDİ&c."
+  report-already-processed:
+    en: "&cReport ID &e%id% &chas already been processed. Status: &e%status%"
+    tr: "&c&e%id% &cID'li rapor zaten işlenmiş. Durum: &e%status%"
+
+  # /reports Command Messages
+  reports-header:
+    en: "&6--- Reports (Page %page%/%total_pages%) ---"
+    tr: "&6--- Raporlar (Sayfa %page%/%total_pages%) ---"
+  reports-entry:
+    en: "&7ID: &e%id% &7| Status: &e%status% &7| Reported: &e%reported% &7| Reason: &e%reason% &7[Click to view]"
+    tr: "&7ID: &e%id% &7| Durum: &e%status% &7| Rapor Edilen: &e%reported% &7| Sebep: &e%reason% &7[Detaylar için tıkla]"
+  reports-no-pending:
+    en: "&aThere are no pending reports."
+    tr: "&aBekleyen rapor bulunmamaktadır."
+
+  # /myreports Command Messages
+  myreports-header:
+    en: "&6--- Your Reports (Page %page%/%total_pages%) ---"
+    tr: "&6--- Raporlarınız (Sayfa %page%/%total_pages%) ---"
+  myreports-entry:
+    en: "&7ID: &e%id% &7| Status: &e%status% &7| Reported: &e%reported% &7| Reason: &e%reason%"
+    tr: "&7ID: &e%id% &7| Durum: &e%status% &7| Rapor Edilen: &e%reported% &7| Sebep: &e%reason%"
+  myreports-no-reports:
+    en: "&aYou have not submitted any reports yet."
+    tr: "&aHenüz herhangi bir rapor göndermediniz."
+
+  # /queryreport Command Messages
+  queryreport-details:
+    en: |
+      &6--- Report Details (ID: &e%id%&6) ---
+      &7Status: &e%status%
+      &7Reported Player: &e%reported%
+      &7Reason: &e%reason%
+      &7Details: &e%details%
+      &7Submitted: &e%date%
+      %admin_info%
+    tr: |
+      &6--- Rapor Detayları (ID: &e%id%&6) ---
+      &7Durum: &e%status%
+      &7Rapor Edilen Oyuncu: &e%reported%
+      &7Sebep: &e%reason%
+      &7Detaylar: &e%details%
+      &7Gönderilme Tarihi: &e%date%
+      %admin_info%
+  queryreport-admin-info:
+    en: "&7Processed by: &e%admin% &7on &e%process_date% &7| Outcome: &e%outcome%"
+    tr: "&7İşleyen Admin: &e%admin% &7Tarih: &e%process_date% &7| Sonuç: &e%outcome%"
+  queryreport-admin-info-rejected:
+    en: "&7Rejection Reason: &e%rejection_reason%"
+    tr: "&7Reddetme Sebebi: &e%rejection_reason%"

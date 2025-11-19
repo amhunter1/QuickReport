@@ -1,0 +1,39 @@
+name: QuickReport
+version: 1.0.0
+main: com.melut.quickreport.QuickReport
+api-version: 1.20
+authors: [melut (amhunter1)]
+description: A quick and efficient reporting system for Minecraft servers.
+commands:
+  report:
+    description: Report a player for cheating or misconduct.
+    usage: /<command> <player> <reason> [details]
+    permission: quickreport.report
+    permission-message: You do not have permission to use this command.
+  myreports:
+    description: View your submitted reports.
+    usage: /<command> [page]
+    permission: quickreport.report
+    permission-message: You do not have permission to use this command.
+  queryreport:
+    description: Query the status of a specific report.
+    usage: /<command> <id>
+    permission: quickreport.report
+    permission-message: You do not have permission to use this command.
+  reports:
+    description: View all submitted reports.
+    usage: /<command> [page]
+    permission: quickreport.admin
+    permission-message: You do not have permission to use this command.
+  reportaction:
+    description: Take action on a report (accept/reject).
+    usage: /<command> <accept|reject> <id> [reward-code|reason]
+    permission: quickreport.admin
+    permission-message: You do not have permission to use this command.
+permissions:
+  quickreport.report:
+    description: Allows players to submit reports and view their own reports.
+    default: true
+  quickreport.admin:
+    description: Allows staff to view, manage, and take action on reports.
+    default: op

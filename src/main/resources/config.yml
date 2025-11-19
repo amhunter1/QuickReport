@@ -1,0 +1,37 @@
+# QuickReport Configuration File
+
+# General Settings
+report-cooldown-seconds: 60 # Cooldown for players to submit a new report (in seconds)
+max-reports-per-cooldown: 1 # Maximum number of reports a player can submit within the cooldown period
+
+# Report Reasons (Used for /report <player> <reason>)
+# These reasons will be used for tab-completion.
+report-reasons:
+  - "Fly"
+  - "KillAura"
+  - "Speed"
+  - "Xray"
+  - "Griefing"
+  - "Swearing"
+
+# Admin Notification Settings
+admin-permission: "quickreport.admin"
+# Sound to play to admins when a new report is submitted.
+# See: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+notification-sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+notification-volume: 1.0
+notification-pitch: 1.0
+
+# Reward System Configuration
+# Define reward codes that can be used with /reportaction accept <id> <reward-code>
+# %player% will be replaced with the name of the player who submitted the report.
+rewards:
+  diamond-reward:
+    name: "&bDiamond Reward"
+    command: "give %player% diamond 5"
+  money-reward:
+    name: "&eMoney Reward"
+    command: "eco give %player% 1000"
+  key-reward:
+    name: "&6Crate Key Reward"
+    command: "crate give %player% common 1"
