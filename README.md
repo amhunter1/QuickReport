@@ -354,7 +354,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 🙏 Credits
 
 - **Developer**: Melut
-- **Contributors**: Community contributions welcome!
 
 ---
 
@@ -471,7 +470,3 @@ QuickReport, kutusundan çıktığı gibi İngilizce ve Türkçe dil desteği su
    ```
 
 </details>
-
----
-
-**Made with ❤️ for the Minecraft community**
